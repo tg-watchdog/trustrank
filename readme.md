@@ -1,5 +1,5 @@
 # TrustRank
-This is a simple algorithem of TrustRank, an algorithem that used for evaluate someone’s reputation in a social network. The simulation implementation is also attached inside the repository.
+This is a simple algorithem of TrustRank, an algorithem that used for evaluate someone’s reputation in a social network. The simulated implementation is also attached inside the repository.
 
 ## Algorithem
 The TrustRank algorithem is inspired by [PageRank](https://en.wikipedia.org/wiki/PageRank), an algorithem to calculate the weights of webpages.
