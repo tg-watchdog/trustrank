@@ -41,15 +41,15 @@ async function vote(voterId: number, voteeId: number, trust: boolean): Promise<B
 async function main() {
   // Create normal users
   for (let i = 0; i < 100; i++) {
-    userList.push({ id: i, trustRank: 0.00067, spam: false })
+    userList.push({ id: i, trustRank: 0.1, spam: false })
   }
 
   // Action rounds
   for (let i = 0; i < 10000; i++) {
     // Create 1 normal user: 20% chance
-    if (Math.random() < 0.2) userList.push({ id: userList.length, trustRank: 0.00067, spam: false })
+    if (Math.random() < 0.2) userList.push({ id: userList.length, trustRank: 0.01, spam: false })
     // Create 5 abusers: 2% chance
-    if (Math.random() < 0.02) for (let j = 0; j < 5; j++) userList.push({ id: userList.length, trustRank: 0.00067, spam: true })
+    if (Math.random() < 0.02) for (let j = 0; j < 5; j++) userList.push({ id: userList.length, trustRank: 0.01, spam: true })
 
     // 5 random normal user vote 1 spam user: 50% chance
     if (Math.random() < 0.5) {
