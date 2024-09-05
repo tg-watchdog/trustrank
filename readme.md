@@ -19,7 +19,7 @@ Then, the algorighem will map the relayed score to the interval [-1, 1] with Sig
 ## Simulating
 The `test` folder has some code to simulate the real world context, including:
 
-- A normal register a new account (20% chance)
+- A normal user register a new account (20% chance)
 - An abuser register 5 spam accounts (2% chance)
 - An abuser requests 5 trust votes from other spam accounts for single spam account (simulate purchase upvote from other spammers, 2% chance)
 - 5 normal users give 5 untrust votes to a spam account (simulate spam account send spam to a group chat, 50% chance)
