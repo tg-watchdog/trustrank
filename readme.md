@@ -1,7 +1,7 @@
 # TrustRank
 This is a simple TrustRank algorithm for evaluating someone’s reputation in a social network. The simulated implementation is also attached to the repository.
 
-This algorithm is a potential candidate for improvement for Telegram Watchdog, a tool that helps group chats to prevent spam users.
+This algorithm is a potential candidate for improvement for [Telegram Watchdog](https://github.com/tg-watchdog/tg-watchdog), a tool that helps group chats to prevent spam users.
 
 ## Algorithm
 The TrustRank algorithm is inspired by [PageRank](https://en.wikipedia.org/wiki/PageRank), an algorithm to calculate the weights of web pages.
