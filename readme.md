@@ -6,7 +6,7 @@ The TrustRank algorithem is inspired by [PageRank](https://en.wikipedia.org/wiki
 
 Firstly, we will calculate the “relay trust score” for the votee:
 
-[LaTeX for the relay trust score](https://latex.codecogs.com/svg.image?\text{rawTrustScore}=\sum_{i=1}^{n}\left(\frac{TR(v_i)}{V(v_i)}\right)\cdot\text{sign}(v_i))
+![LaTeX for the relay trust score](https://latex.codecogs.com/svg.image?\text{rawTrustScore}=\sum_{i=1}^{n}\left(\frac{TR(v_i)}{V(v_i)}\right)\cdot\text{sign}(v_i))
 
 In this formula:
 
@@ -16,7 +16,7 @@ In this formula:
 
 Then, the algorighem will map the relayed score to the interval [-1, 1] with Sigmoid function:
 
-[LaTeX for Sigmoiding](https://latex.codecogs.com/svg.image?\text{TrustRank}=\begin{cases}\frac{1}{1&plus;e^{-\text{rawTrustScore}}},&\text{if}\text{rawTrustScore}>0\\-\frac{1}{1&plus;e^{\text{rawTrustScore}}},&\text{if}\text{rawTrustScore}\leq&space;0\end{cases})
+![LaTeX for Sigmoiding](https://latex.codecogs.com/svg.image?\text{TrustRank}=\begin{cases}\frac{1}{1&plus;e^{-\text{rawTrustScore}}},&\text{if}\text{rawTrustScore}>0\\-\frac{1}{1&plus;e^{\text{rawTrustScore}}},&\text{if}\text{rawTrustScore}\leq&space;0\end{cases})
 
 ## Simulating
 The `test` folder has some code to simulate the real world context, including:
