@@ -33,21 +33,21 @@ Other limitations applied in the simulation program:
 Program output:
 
 ```text
-Total users: 3000
-Maxium trustRank: 0.6590430203408233
-Minium trustRank: -0.6578132318318242
-Average trustRank: 0.1489436624590077
+Total users: 3056
+Maxium trustRank: 0.659045770113111
+Minium trustRank: -0.6573961384063101
+Average trustRank: 0.1740412817879677
 ====
-Normal users: 2090
-Maxium TR of normal user: 0.6590430203408233
-Minium TR of normal user: 0.01
-Average TR of normal user: 0.4435725828608798
+Normal users: 2121
+Maxium TR of normal user: 0.659045770113111
+Minium TR of normal user: 0.1
+Average TR of normal user: 0.47638180526734636
 ====
-Abusers: 910
-Maxium TR of abuser: 0.5024999791668749
-Minium TR of abuser: -0.6578132318318242
-Average TR of abuser: -0.5277315503321116
-Abusers have positive TR: 140
+Abusers: 935
+Maxium TR of abuser: 0.52497918747894
+Minium TR of abuser: -0.6573961384063101
+Average TR of abuser: -0.5118028361796922
+Abusers have positive TR: 150
 ```
 
 This output illustrate that although the most abusers have negative value, there are chances that abusers may got high positive TR. Especially for someone may intent to create some “high quality trust vote available” spam accounts.
