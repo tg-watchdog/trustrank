@@ -7,7 +7,10 @@ declare global {
     id: number,
 
     // The user's trustrank
-    trustRank: number
+    trustRank: number,
+
+    // Is user spam
+    spam: boolean
   }
 
   /*
