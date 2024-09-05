@@ -10,7 +10,7 @@ Firstly, we will calculate the “relay trust score” for the votee:
 
 In this formula:
 
-- Calculate the vote weight of each single voter.
+- Calculate the vote weight of each single voter, which calcuated with divided the TrustRank of the voter by how many votes the voters made before (including trust vote and untrust vote).
 - The voter may vote the votee as “trusted” or “untrusted”. The weight will multiply by -1 if voter votes untrust, and vice versa.
 - Sum up the vote results voted by all voters.
 
