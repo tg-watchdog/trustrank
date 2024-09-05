@@ -6,7 +6,7 @@ This algorithm is a potential candidate for improvement for Telegram Watchdog, a
 ## Algorithm
 The TrustRank algorithm is inspired by [PageRank](https://en.wikipedia.org/wiki/PageRank), an algorithm to calculate the weights of web pages.
 
-Firstly, we will calculate the “relay trust score” for the vote:
+Firstly, we will calculate the “relay trust score” for the votee:
 
 ![LaTeX for the relay trust score](https://latex.codecogs.com/svg.image?\text{rawTrustScore}=\sum_{i=1}^{n}\left(\frac{TR(v_i)}{V(v_i)}\right)\cdot\text{sign}(v_i))
 
