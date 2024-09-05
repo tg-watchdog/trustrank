@@ -7,21 +7,21 @@ declare global {
     id: number,
 
     // The user's trustrank
-    trustRank: number,
-
-    // If the user is an ad
-    isAbuse: boolean
+    trustRank: number
   }
 
   /*
-  * Define the Trust
+  * Define the Vote
   */
-  interface Trust {
-    // The user who trusts
-    from: number,
+  interface Vote {
+    // The user who votes
+    voter: number,
 
-    // The user who is trusted
-    to: number
+    // The user who is being voted
+    votee: number,
+
+    // The vote value
+    trust: boolean
   }
 }
 

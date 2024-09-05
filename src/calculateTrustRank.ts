@@ -1,17 +1,16 @@
-function calculateTrustRank(trustList: {
-  trustRank: number;
-  otherTrustee: number;
-}[]): number {
-  let rawTrustRank = 0
-  for (let i in trustList) {
-    let otherTrustee = trustList[i].otherTrustee
-    if (otherTrustee === 0) otherTrustee = 1
-    rawTrustRank += trustList[i].trustRank / otherTrustee
+function calculateTrustRank(voteList: { trust: boolean, trustRank: number; otherVotes: number }[]): number {
+  let rawTrustScore = 0
+  for (let i in voteList) {
+    let vote = voteList[i]
+    if (vote.trust)rawTrustScore += vote.trustRank / vote.otherVotes
+    else rawTrustScore -= vote.trustRank / vote.otherVotes
   }
-
-  // Damping Factor
-  const d = 0.85
-  return 1 - d + d * rawTrustRank
+  // Sigmoid function to normalize the trust score
+  if (rawTrustScore > 0) {
+    return 1 / (1 + Math.exp(-rawTrustScore))
+  } else {
+    return -1 / (1 + Math.exp(rawTrustScore))
+  }
 }
 
 export default calculateTrustRank
